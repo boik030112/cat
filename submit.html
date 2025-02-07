@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提交摄影作品</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>提交你的摄影作品</h1>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="gallery.html">作品展示</a>
+      <a href="contact.html">联系我们</a>
+    </nav>
+  </header>
+
+  <section class="submit-section">
+    <h2>📤 作品上传</h2>
+    <form id="uploadForm">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" required>
+      
+      <label for="title">作品标题：</label>
+      <input type="text" id="title" required>
+      
+      <label for="description">作品描述：</label>
+      <textarea id="description" rows="3" required></textarea>
+
+      <label for="fileInput">上传照片：</label>
+      <input type="file" id="fileInput" accept="image/*" required>
+      
+      <button type="submit">提交作品</button>
+    </form>
+    <!-- 可选：在页面显示上传预览 -->
+    <div id="preview"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 摄影展览</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
